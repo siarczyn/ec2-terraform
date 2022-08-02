@@ -1,0 +1,5 @@
+sudo yum install -y mongodb-org-shell
+wget https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
+mongo --ssl --host offers.cnxouyqeitaw.eu-central-1.docdb.amazonaws.com:27017 --sslCAFile rds-combined-ca-bundle.pem --username offers --password aJGDjKpOaoaEhmVUzpjOqFABXrBtdCiy
+use scrapy
+db.items.find()
